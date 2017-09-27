@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+
+<title>e-Medrese Dijital Sarf 1.0 (Beta)</title>
+
+<link rel="shortcut icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+
+    <link rel="stylesheet" href="css/bootstraprtl.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstraprtl.min.js"></script>
+    <script src="js/cekim.js"></script>
+    <script src="js/detay.js"></script>
+    <script src="js/detaytr.js"></script>
+</head>
+
+<body>
+
+<h1 dir="ltr" class="sayfabaslik">e-Medrese Dijital Sarf 1.0 (Beta)</h1>
+<h1 class="sayfabaslik">اَلأَمْثِلَةُ الْمُخْتَلِفَةُ</h1>
+<div class="container-fluid" id="formDiv">
+    <form class="form-horizontal col-sm-8 col-sm-pull-2">
+        <div class="form-group formgroup">
+            <label for="first" class="col-sm-3 control-label">الحرف الاولى</label>
+            <div class="col-sm-9">
+                <select class="form-control sel1" name="first" id="first">
+                <option value="ن">ن</option>
+                <option value="ب">ب</option>
+                <option value="ت">ت</option>
+                <option value="ث">ث</option>
+                <option value="ج">ج</option>
+                <option value="ح">ح</option>
+                <option value="خ">خ</option>
+                <option value="د">د</option>
+                <option value="ذ">ذ</option>
+                <option value="ر">ر</option>
+                <option value="ز">ز</option>
+                <option value="س">س</option>
+                <option value="ش">ش</option>
+                <option value="ص">ص</option>
+                <option value="ض">ض</option>
+                <option value="ط">ط</option>
+                <option value="ظ">ظ</option>
+                <option value="ع">ع</option>
+                <option value="غ">غ</option>
+                <option value="ف">ف</option>
+                <option value="ق">ق</option>
+                <option value="ك">ك</option>
+                <option value="ل">ل</option>
+                <option value="م">م</option>
+                <option value="ه">ه</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group formgroup">
+            <label for="second" class="col-sm-3 control-label">الحرف الثاني</label>
+            <div class="col-sm-9">
+                <select class="form-control sel1" name="second" id="second">
+                <option value="ص">ص</option>
+                <option value="ب">ب</option>
+                <option value="ت">ت</option>
+                <option value="ث">ث</option>
+                <option value="ج">ج</option>
+                <option value="ح">ح</option>
+                <option value="خ">خ</option>
+                <option value="د">د</option>
+                <option value="ذ">ذ</option>
+                <option value="ر">ر</option>
+                <option value="ز">ز</option>
+                <option value="س">س</option>
+                <option value="ش">ش</option>
+                <option value="ض">ض</option>
+                <option value="ط">ط</option>
+                <option value="ظ">ظ</option>
+                <option value="ع">ع</option>
+                <option value="غ">غ</option>
+                <option value="ف">ف</option>
+                <option value="ق">ق</option>
+                <option value="ك">ك</option>
+                <option value="ل">ل</option>
+                <option value="م">م</option>
+                <option value="ن">ن</option>
+                <option value="ه">ه</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group formgroup">
+            <label for="third" class="col-sm-3 control-label">الحرف الثالث</label>
+            <div class="col-sm-9">
+                <select class="form-control sel1" name="third" id="third">
+                <option value="ر">ر</option>
+                <option value="ب">ب</option>
+                <option value="ت">ت</option>
+                <option value="ث">ث</option>
+                <option value="ج">ج</option>
+                <option value="ح">ح</option>
+                <option value="خ">خ</option>
+                <option value="د">د</option>
+                <option value="ذ">ذ</option>
+                <option value="ز">ز</option>
+                <option value="س">س</option>
+                <option value="ش">ش</option>
+                <option value="ص">ص</option>
+                <option value="ض">ض</option>
+                <option value="ط">ط</option>
+                <option value="ظ">ظ</option>
+                <option value="ع">ع</option>
+                <option value="غ">غ</option>
+                <option value="ف">ف</option>
+                <option value="ق">ق</option>
+                <option value="ك">ك</option>
+                <option value="ل">ل</option>
+                <option value="م">م</option>
+                <option value="ن">ن</option>
+                <option value="ه">ه</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group formgroup">
+            <label for="fourth" class="col-sm-3 control-label">وزن المصدر</label>
+            <div class="col-sm-9">
+                <select class="form-control sel1" name="fourth" id="fourth">
+                <option value="0">فَعْلًا</option>
+                <option value="1">فِعَالَةً</option>
+                <option value="2">فِعَالًا</option>
+                <option value="3">فَعَلَانًا</option>
+                <option value="4">فُعَالًا</option>
+                <option value="5">فُعْلَةً</option>
+                <option value="6">فَعِيلًا</option>
+                <option value="7">فُعُولَةً</option>
+                <option value="8">فَعَالَةً</option>
+                <option value="9">فَعَلًا</option>
+                <option value="10">فُعُولًا</option>
+                <option value="11">فِعْلًا</option>
+                <option value="12">فُعْلًا</option>
+            </select>
+            </div>
+        </div>
+        <div class="form-group formgroup">
+            <label for="fifth" class="col-sm-3 control-label">باب الفعل</label>
+            <div class="col-sm-9">
+                <select class="form-control sel1" name="fifth" id="fifth">
+                <option value="0">اَلْبَابُ الْاَوَّلُ</option>
+                <option value="1">اَلْبَابُ الثَّانِي</option>
+                <option value="2">اَلْبَابُ الثَّالِثُ</option>
+                <option value="3">اَلْبَابُ الرَّابِعُ</option>
+                <option value="4">اَلْبَابُ الْخَامِسُ</option>
+                <option value="5">اَلْبَابُ السّادِسُ</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="container-fluid formgroup">
+            <button class="btn btn-success" type="button" onclick="getir()" id="button">GETİR</button>
+        </div>
+
+    </form>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12" id="accordionss">
+
+</div>
+<p id="pgotur"><button class="btn btn-danger hidden" type="button" onclick="gotur()" id="button2">GÖTÜR</button></p>
+<script>
+
+    function gotur() {
+        $('#formDiv').show();
+        $('#accordionss').html('');
+        $('#button2').addClass('hidden');
+    }
+
+    function getir(){
+
+        $('#formDiv').hide();
+        $('#button2').removeClass('hidden');
+
+        $bir = $('#first').val();
+        $iki = $('#second').val();
+        $uc = $('#third').val();
+
+        $ustun = 'َ';
+        $ikiustun = 'ً';
+        $esre = 'ِ';
+        $ikiesre = 'ٍ';
+        $otre = 'ُ';
+        $ikiotre = 'ٌ';
+        $cezm = 'ْ';
+        $sedde = 'ّ';
+
+        $mastarsss = $('#fourth').val();
+        $babs = $('#fifth').val();
+
+        switch ($mastarsss) {
+            case '0':
+                $mastar = $bir + $ustun  + $iki + $cezm + $uc;
+                $mastar1 = $bir + $ustun  + $iki + $cezm + $uc + $ikiustun + 'ا';
+                $mastar2 = $bir + $ustun  + $iki + $cezm + $uc + $ustun + 'انِ';
+                $mastar3 = $bir + $ustun  + $iki + $cezm + $uc + 'َاتٌ';
+                break;
+            case '1':
+                $mastar = $bir + $esre  + $iki + 'َا' + $uc;
+                $mastar1 = $bir + $esre  + $iki + 'َا' + $uc + 'َةً';
+                $mastar2 = $bir + $esre  + $iki + 'َا' + $uc + 'َتَانِ';
+                $mastar3 = $bir + $esre  + $iki + 'َا' + $uc + 'َاتٌ';
+                break;
+            case '2':
+                $mastar = $bir + $esre  + $iki + 'َا' + $uc;
+                $mastar1 = $bir + $esre  + $iki + 'َا' + $uc + $ikiustun + 'ا';
+                $mastar2 = $bir + $esre  + $iki + 'َا' + $uc + $ustun + 'انِ';
+                $mastar3 = $bir + $esre  + $iki + 'َا' + $uc + 'َاتٌ';
+                break;
+            case '3':
+                $mastar = $bir + $ustun  + $iki + $ustun + $uc + 'َان';
+                $mastar1 = $bir + $ustun  + $iki + $ustun + $uc + 'َان' + $ikiustun + 'ا';
+                $mastar2 = $bir + $ustun  + $iki + $ustun + $uc + 'َان' + $ustun + 'انِ';
+                $mastar3 = $bir + $ustun  + $iki + $ustun + $uc + 'َان' + 'َاتٌ';
+                break;
+            case '4':
+                $mastar = $bir + $otre  + $iki + 'َا' + $uc;
+                $mastar1 = $bir + $otre  + $iki + 'َا' + $uc + $ikiustun + 'ا';
+                $mastar2 = $bir + $otre  + $iki + 'َا' + $uc + $ustun + 'انِ';
+                $mastar3 = $bir + $otre  + $iki + 'َا' + $uc + 'َاتٌ';
+                break;
+            case '5':
+                $mastar = $bir + $otre  + $iki + $cezm + $uc;
+                $mastar1 = $bir + $otre  + $iki + $cezm + $uc + 'َةً';
+                $mastar2 = $bir + $otre  + $iki + $cezm + $uc + 'َتَانِ';
+                $mastar3 = $bir + $otre  + $iki + $cezm + $uc + 'َاتٌ';
+                break;
+            case '6':
+                $mastar = $bir + $ustun  + $iki + 'ِي' + $uc;
+                $mastar1 = $bir + $ustun  + $iki + 'ِي' + $uc + $ikiustun + 'ا';
+                $mastar2 = $bir + $ustun  + $iki + 'ِي' + $uc + $ustun + 'انِ';
+                $mastar3 = $bir + $ustun  + $iki + 'ِي' + $uc + 'َاتٌ';
+                break;
+            case '7':
+                $mastar = $bir + $otre  + $iki + 'ُو' + $uc;
+                $mastar1 = $bir + $otre  + $iki + 'ُو' + $uc + 'َةً';
+                $mastar2 = $bir + $otre  + $iki + 'ُو' + $uc + 'َتَانِ';
+                $mastar3 = $bir + $otre  + $iki + 'ُو' + $uc + 'َاتٌ';
+                break;
+            case '8':
+                $mastar = $bir + $ustun  + $iki + 'َا' + $uc;
+                $mastar1 = $bir + $ustun  + $iki + 'َا' + $uc + 'َةً';
+                $mastar2 = $bir + $ustun  + $iki + 'َا' + $uc + 'َتَانِ';
+                $mastar3 = $bir + $ustun  + $iki + 'َا' + $uc + 'َاتٌ';
+                break;
+            case '9':
+                $mastar = $bir + $ustun  + $iki + $ustun + $uc;
+                $mastar1 = $bir + $ustun  + $iki + $ustun + $uc + $ikiustun + 'ا';
+                $mastar2 = $bir + $ustun  + $iki + $ustun + $uc + $ustun + 'انِ';
+                $mastar3 = $bir + $ustun  + $iki + $ustun + $uc + 'َاتٌ';
+                break;
+            case '10':
+                $mastar = $bir + $otre  + $iki + 'ُو' + $uc;
+                $mastar1 = $bir + $otre  + $iki + 'ُو' + $uc + $ikiustun + 'ا';
+                $mastar2 = $bir + $otre  + $iki + 'ُو' + $uc + $ustun + 'انِ';
+                $mastar3 = $bir + $otre  + $iki + 'ُو' + $uc + 'َاتٌ';
+                break;
+            case '11':
+                $mastar = $bir + $esre  + $iki + $cezm + $uc;
+                $mastar1 = $bir + $esre  + $iki + $cezm + $uc + $ikiustun + 'ا';
+                $mastar2 = $bir + $esre  + $iki + $cezm + $uc + $ustun + 'انِ';
+                $mastar3 = $bir + $esre  + $iki + $cezm + $uc + 'َاتٌ';
+                break;
+            case '12':
+                $mastar = $bir + $otre  + $iki + $cezm + $uc;
+                $mastar1 = $bir + $otre  + $iki + $cezm + $uc + $ikiustun + 'ا';
+                $mastar2 = $bir + $otre  + $iki + $cezm + $uc + $ustun + 'انِ';
+                $mastar3 = $bir + $otre  + $iki + $cezm + $uc + 'َاتٌ';
+                break;
+        }
+
+        switch ($babs) {
+            case '0':
+                $malum = $bir + $ustun  + $iki + $ustun + $uc;
+                $muzarimalum = $ustun + $bir + $cezm  + $iki + $otre + $uc;
+                $emir = 'ا' + $otre + $bir + $cezm  + $iki + $otre + $uc;
+                break;
+            case '1':
+                $malum = $bir + $ustun  + $iki + $ustun + $uc;
+                $muzarimalum = $ustun + $bir + $cezm  + $iki + $esre + $uc;
+                $emir = 'ا' + $esre + $bir + $cezm  + $iki + $esre + $uc;
+                break;
+            case '2':
+                $malum = $bir + $ustun  + $iki + $ustun + $uc;
+                $muzarimalum = $ustun + $bir + $cezm  + $iki + $ustun + $uc;
+                $emir = 'ا' + $esre + $bir + $cezm  + $iki + $ustun + $uc;
+                break;
+            case '3':
+                $malum = $bir + $ustun  + $iki + $esre + $uc;
+                $muzarimalum = $ustun + $bir + $cezm  + $iki + $ustun + $uc;
+                $emir = 'ا' + $esre + $bir + $cezm  + $iki + $ustun + $uc;
+                break;
+            case '4':
+                $malum = $bir + $ustun  + $iki + $otre + $uc;
+                $muzarimalum = $ustun + $bir + $cezm  + $iki + $otre + $uc;
+                $emir = 'ا' + $otre + $bir + $cezm  + $iki + $otre + $uc;
+                break;
+            case '5':
+                $malum = $bir + $ustun  + $iki + $esre + $uc;
+                $muzarimalum = $ustun + $bir + $cezm  + $iki + $esre + $uc;
+                $emir = 'ا' + $esre + $bir + $cezm  + $iki + $esre + $uc;
+                break;
+        }
+
+        $mechul = $bir + $otre  + $iki + $esre + $uc;
+
+        $muzarimechul = $otre + $bir + $cezm  + $iki + $ustun + $uc;
+
+        $ismifail = $bir + $ustun + 'ا' + $iki + $esre + $uc;
+        $ismimeful =  'م' + $ustun + $bir + $cezm + $iki + $otre + 'و' + $uc;
+
+        $ismimekanalet = $bir + $cezm + $iki + $ustun + $uc;
+        $ismitasgir = $bir + $otre + $iki + 'َيْ' + $uc;
+        $mubalagaismifail = $bir + $ustun + $iki + 'َّا' + $uc;
+        $ismitafdilmzk = 'اَ' + $bir + $cezm + $iki + $ustun + $uc;
+        $ismitafdilmns = $bir + $otre + $iki + $cezm + $uc + $ustun;
+        $fiilitaaccupevvel = 'مَا اَ' + $bir + $cezm + $iki + $ustun + $uc + $ustun;
+        $fiilitaaccupsani = 'اَ' + $bir + $cezm + $iki + $esre + $uc + 'ْ بِ';
+
+        $fiilimadi = 'فعل ماضي ';
+        $fiilimuzari = 'فعل مضارع ';
+        $binaimalum = 'بناء معلوم ';
+        $binaimechul = 'بناء مجهول ';
+        $mufret = 'مفرد ';
+        $tesniye = 'تثنیه ';
+        $cemi = 'جمع ';
+        $muzekker = 'مذكر ';
+        $muennes = 'مؤنث ';
+        $gaib = 'غائب ';
+        $gaibe = 'غائبه ';
+        $muhatap = 'مخاطب ';
+        $muhatapa = 'مخاطبه ';
+        $nefsimutkellim1 = 'نفس متكلم وحده ';
+        $nefsimutkellim2 = 'نفس متكلم مع الغير ';
+        $manasi = 'معناسي ';
+
+        $cahdimutlak = 'جحد مطلق ';
+        $cahdimustagrak = 'جحد مستغرق ';
+        $nefyhal = 'نفی حال ';
+        $nefyistikbal = 'نفی استقبال ';
+        $tekidinefyistikbal = 'تأكید نفی استقبال ';
+        $emrigaib = 'امر غائب ';
+        $emrihadir = 'امر حاضر ';
+        $nehyigaib = 'نهي  غائب ';
+        $nehyihadir = 'نهي  حاضر ';
+        $ismimekan = 'اسم زمان اسم مكان مصدر میمي ';
+
+        $fiilimaditr = 'Fiil-i Mazi ';
+        $fiilimuzaritr = 'Fiil-i Muzari ';
+        $binaimalumtr = 'Bina-i Malum ';
+        $binaimechultr = 'Bina-i Mechul ';
+        $mufrettr = 'Müfret ';
+        $tesniyetr = 'Tesniye ';
+        $cemitr = 'Cemi ';
+        $muzekkertr = 'Müzekker ';
+        $muennestr = 'Müennes ';
+        $gaibtr = 'Ğaib ';
+        $gaibetr = 'Ğaibe ';
+        $muhataptr = 'Muhatap ';
+        $muhatabatr = 'Muhatabe ';
+        $nefsimutkellim1tr = 'Nefs-i Mütekellim Vahdehu ';
+        $nefsimutkellim2tr = 'Nefs-i Mütekellim Mael-Ğayr ';
+        $manasitr = 'Manası ';
+
+        $cahtimutlaktr = 'Cahd-i Mutlak ';
+        $cahtimustagraktr = 'Cahd-i Mustağrak ';
+        $nefyhaltr = 'Nefy-i Hal ';
+        $nefyistikbaltr = 'Nefy-i İstikbal ';
+        $tekidinefyistikbaltr = 'Tekid-i Nefy-i İstikbal ';
+        $emrigaibtr = ' Emr-i Ğaib ';
+        $emrihadirtr = ' Emr-i Hazır ';
+        $nehyigaibtr = 'Nehy-i Ğaib ';
+        $nehyihadirtr = 'Nehy-i Hazır ';
+        $ismimekantr = 'İsm-i Zaman İsm-i Mekan Mastar Mimi ';
+
+        for (var i = 0; i < 24; i++){
+
+            $('#accordionss').append(
+                '<div class="col-lg-3 col-md-4 col-sm-6">' +
+                    '<div class="panel panel-default">\n' +
+                        '<div class="panel-heading"><b>\n' +
+                            misal(i) +
+                        '</b></div>\n' +
+                        '<div class="panel-body panelGiris">\n' +
+                            misaldetay(i) +
+                        '</div>\n' +
+                    '<div id="butonlar" class="container-fluid">\n' +
+                        '<a class="btn btn-success" data-toggle="modal" data-target="#myA'+i+'"><span class="glyphicon glyphicon-sort-by-attributes"></span></a>\n' +
+                        '<a class="btn btn-danger" data-toggle="modal" data-target="#myB'+i+'"><span class="glyphicon glyphicon-info-sign"></span></a>\n' +
+                        '<a class="btn btn-primary" data-toggle="modal" data-target="#myC'+i+'"><span class="glyphicon glyphicon-tags"></span></a>\n' +
+                        '<a id="videoBtn'+i+'" class="btn btn-warning" data-toggle="modal" data-target="#myD'+i+'"><span class="glyphicon glyphicon-film"></span></a>\n' +
+                    '</div>\n' +
+                '</div>' +
+                '</div>' +
+                '<div class="modal fade modelA" id="myA'+i+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\n' +
+                '  <div class="modal-dialog modal-lg" role="document">\n' +
+                '    <div class="modal-content">\n' +
+                '      <div class="modal-header">\n' +
+                '        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>\n' +
+                '        <h4 class="modal-title panel-heading" id="myModalLabel">اَلأَمْثِلَةُ الْمُطَّرِدَةُ مِنْ '+misal(i)+'</h4>\n' +
+                '      </div>\n' +
+                '      <div id="cekimDiv" class="modal-body">' +
+                '       <div class="container-fluid">\n' +
+                '        '+cekim(i) +
+                '       </div>' +
+                '      </div>\n' +
+                '    </div>\n' +
+                '  </div>\n' +
+                '</div>' +
+                '<div class="modal fade modelB" id="myB'+i+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\n' +
+                '  <div class="modal-dialog modal-lg" role="document">\n' +
+                '    <div class="modal-content">\n' +
+                '      <div class="modal-header">\n' +
+                '        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>\n' +
+                '        <h4 class="modal-title" id="myModalLabel"> Çekimleri '+misal(i)+'</h4>\n' +
+                '      </div>\n' +
+                '      <div class="modal-body">\n' +
+                '       <div class="container-fluid">\n' +
+                '        '+cekimtr(i) +
+                '       </div>' +
+                '      </div>\n' +
+                '    </div>\n' +
+                '  </div>\n' +
+                '</div>' +
+                '<div class="modal fade modelC" id="myC'+i+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\n' +
+                '  <div class="modal-dialog modal-lg" role="document">\n' +
+                '    <div class="modal-content">\n' +
+                '      <div class="modal-header">\n' +
+                '        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>\n' +
+                '        <h2 class="modal-title sayfabaslik" id="myModalLabel">'+misal(i)+'</h2>\n' +
+                '      </div>\n' +
+                '      <div class="modal-body">\n' +
+                '        '+misaldetayaciklama(i) +
+                '      </div>\n' +
+                '    </div>\n' +
+                '  </div>\n' +
+                '</div>' +
+                '<div class="modal fade modelD" id="myD'+i+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\n' +
+                '  <div class="modal-dialog modal-lg" role="document">\n' +
+                '    <div class="modal-content">\n' +
+                '      <div class="modal-header">\n' +
+                '        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>\n' +
+                '        <h2 class="modal-title sayfabaslik" id="myModalLabel">'+misal(i)+'</h2>\n' +
+                '      </div>\n' +
+                '      <div class="modal-body">\n' +
+                '        '+misaldetayvideo(i) +
+                '      </div>\n' +
+                '    </div>\n' +
+                '  </div>\n' +
+                '</div>'
+            );
+//            if (i>0) { $('#videoBtn'+i).addClass('hidden'); }
+        }
+
+
+        function misal (x) {
+            switch (x) {
+                case 0:
+                    return $malum + $ustun;
+                    break;
+                case 1:
+                    return 'ي' + $muzarimalum + $otre;
+                    break;
+                case 2:
+                    return $mastar1;
+                    break;
+                case 3:
+                    return $ismifail + $ikiotre;
+                    break;
+                case 4:
+                    return $ismimeful + $ikiotre;
+                    break;
+                case 5:
+                    return 'لَمْ ي' + $muzarimalum + $cezm;
+                    break;
+                case 6:
+                    return 'لَمَّا ي' + $muzarimalum + $cezm;
+                    break;
+                case 7:
+                    return 'مَا ي' + $muzarimalum + $otre;
+                    break;
+                case 8:
+                    return 'لَا ي' + $muzarimalum + $otre;
+                    break;
+                case 9:
+                    return 'لَنْ ي' + $muzarimalum + $ustun;
+                    break;
+                case 10:
+                    return 'لِي' + $muzarimalum + $cezm;
+                    break;
+                case 11:
+                    return 'لَا ي' + $muzarimalum + $cezm;
+                    break;
+                case 12:
+                    return $emir + $cezm;
+                    break;
+                case 13:
+                    return 'لَا ت' + $muzarimalum + $cezm;
+                    break;
+                case 14:
+                    return 'مَ' + $bir + $cezm + $iki + $ustun + $uc + $ikiotre;
+                    break;
+                case 15:
+                    return 'مِ' + $bir + $cezm + $iki + $ustun + $uc + $ikiotre;
+                    break;
+                case 16:
+                    return $bir + $ustun + $iki + $cezm + $uc + $ustun + 'ةً';
+                    break;
+                case 17:
+                    return $bir + $esre + $iki + $cezm + $uc + $ustun + 'ةً';
+                    break;
+                case 18:
+                    return $ismitasgir + $ikiotre;
+                    break;
+                case 19:
+                    return $mastar + 'ِيٌّ';
+                    break;
+                case 20:
+                    return $bir + $ustun + $iki + 'َّا' + $uc + $ikiotre;
+                    break;
+                case 21:
+                    return 'اَ' + $bir + $cezm + $iki + $ustun + $uc + $otre;
+                    break;
+                case 22:
+                    return 'مَا اَ' + $bir + $cezm + $iki + $ustun + $uc + $ustun + 'هُ';
+                    break;
+                case 23:
+                    return 'وَ اَ' + $bir + $cezm + $iki + $esre + $uc + $cezm + ' بِهِ';
+                    break;
+            }
+        }
+
+        function misaldetay (x) {
+            switch (x) {
+                case 0:
+                    $detay = '<b>فعل ماضي بناء معلوم مفرد مذكر غائب معناسي ایتدی بر غائب ار كچمش زماندە</b>';
+                    return $detay;
+                    break;
+                case 1:
+                    $detay = '<b>فعل مضارع بناء معلوم مفرد مذكر غائب معناسي ایدر بر غائب ار شمدیكی حالدە یا كلەجك زماندە</b>';
+                    return $detay;
+                    break;
+                case 2:
+                    $detay = '<b>مصدر غير میمي مفرد معناسي ایتمك</b>';
+                    return $detay;
+                case 3:
+                    $detay = '<b>اسم فاعل مفرد مذكر معناسي ایدیجی بر ار</b>';
+                    return $detay;
+                case 4:
+                    $detay = '<b>اسم مفعول مفرد مذكر معناسي اولنمش بر ار</b>';
+                    return $detay;
+                case 5:
+                    $detay = '<b>فعل مضارع جحد مطلق بناء معلوم مفرد مذكر غائب معناسي ایتمدی بر غائب ار كچمش زماندە</b>';
+                    return $detay;
+                case 6:
+                    $detay = '<b>فعل مضارع جحد مستغرق بناء معلوم مفرد مذكرغائب معناسي ایتمدی بر غائب ار كچمش زمانك جمعیسندە</b>';
+                    return $detay;
+                case 7:
+                    $detay = '<b>فعل مضارع نفی حال بناء معلوم مفرد مذكر غائب معناسي ایتمزبر غائب ار شمدیكی حالدە</b>';
+                    return $detay;
+                case 8:
+                    $detay = '<b>فعل مضارع نفی استقبال بناء معلوم مفرد مذكر غائب معناسي ایتمز بر غائب ار كلەجك زماندە</b>';
+                    return $detay;
+                case 9:
+                    $detay = '<b>فعل مضارع تأكید نفی استقبال بناء معلوم مفرد مذكر غائب معناسي البتە ایتمز بر غائب ار كلەجك زماندە</b>';
+                    return $detay;
+                case 10:
+                    $detay = '<b>امر غائب بناء معلوم مفرد مذكر غائب معناسي ایتسون بر غائب ار كلەجك زماندە</b>';
+                    return $detay;
+                case 11:
+                    $detay = '<b>نهي غائب بناء معلوم مفرد مذكر غائب معناسي ایتمسون بر غائب ار كلەجك زماندە</b>';
+                    return $detay;
+                case 12:
+                    $detay = '<b>امر حاضر بناء معلوم مفرد مذكر مخاطب معناسي ایت سن بر حاضر ار كلەجك زماندە</b>';
+                    return $detay;
+                case 13:
+                    $detay = '<b>نهي حاضر بناء معلوم مفرد مذكر مخاطب معناسي ایتمە سن بر حاضر ار كلەجك زماندە</b>';
+                    return $detay;
+                case 14:
+                    $detay = '<b>اسم زمان اسم مكان مصدر میمي مفرد معناس ایدەجك زمان ایدەجك مكان بر ایتمك</b>';
+                    return $detay;
+                case 15:
+                    $detay = '<b>اسم آلة مفرد معناس ایدەجك بر آلة</b>';
+                    return $detay;
+                case 16:
+                    $detay = '<b>مصدر بناء مرە مفرد معناسي بر كرە یاردم ایتمك</b>';
+                    return $detay;
+                case 17:
+                    $detay = '<b>مصدر بناء نوع مفرد معناس بر درلو ایتمك</b>';
+                    return $detay;
+                case 18:
+                    $detay = '<b>اسم تصغير مفرد مذكر معناسي ایتمەجك بر ار</b>';
+                    return $detay;
+                case 19:
+                    $detay = '<b>اسم منسوب مفرد مذكر معناسي ایتمكە منسوب بر ار</b>';
+                    return $detay;
+                case 20:
+                    $detay = '<b>مبالغە اسم فاعل مفرد مذكر معناسي مبالغە ایلە ایدیجی بر ار</b>';
+                    return $detay;
+                case 21:
+                    $detay = '<b>اسم تفضیل مفرد مذكر معناسي زیادە ایدیجی بر ار</b>';
+                    return $detay;
+                case 22:
+                    $detay = '<b>فعل تعجب اول مفرد مذكرغائب معناسي عجب ایتدی بر غائب ار</b>';
+                    return $detay;
+                case 23:
+                    $detay = '<b>فعل تعجب ثانی مفرد مذكرغائب معناسي نە عجب ایتدی بر غائب ار</b>';
+                    return $detay;
+            }
+        }
+
+        function misaldetayaciklama(x) {
+            switch (x) {
+                case 0:
+                    $aciklama = detaytrgetir(0);
+                    return $aciklama;
+                    break;
+                default:
+                    $aciklama = "<p class='sayfabaslik'>Buraya bu fiil hakkındaki açıklamalar gelecek</p>";
+                    return $aciklama;
+                    break;
+            }
+        }
+
+        function misaldetayvideo(x) {
+            switch (x) {
+                case 0:
+                    $aciklama = '<iframe width="100%" height="360" src="https://www.youtube.com/embed/y36O3An_w2E" frameborder="0" allowfullscreen></iframe>';
+                    return $aciklama;
+                    break;
+                default:
+                    $aciklama = "<p class='sayfabaslik'>Buraya bu fiil hakkındaki kısa açıklama videosu gelecek</p>";
+                    return $aciklama;
+                    break;
+            }
+        }
+        function cekim (x) {
+
+            switch (x) {
+                case 0:
+
+                    $gidecek = '';
+                    for (var i1 = 0; i1 < 28; i1++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                                    '<div class="panel panel-default">\n' +
+                                        '<div class="panel-heading"><b>\n' +
+                                            mazicekim(i1) +
+                                        '</b></div>\n' +
+                                        '<div class="panel-body">\n' +
+                                            mazidetay(i1) +
+                                        '</div>\n' +
+                                    '</div>' +
+                                 '</div>';
+                        $gidecek += $detay;
+                    }
+
+                    return $gidecek;
+                case 1:
+                    $gidecek = '';
+                    for (var i2 = 0; i2 < 14; i2++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                                    '<div class="panel panel-default">\n' +
+                                        '<div class="panel-heading"><b>\n' +
+                                            muzaricekim(i2, $muzarimalum) +
+                                        '</b></div>\n' +
+                                        '<div class="panel-body">\n' +
+                                            muzaridetay(i2) +
+                                        '</div>\n' +
+                                    '</div>' +
+                                '</div>';
+                        $gidecek += $detay;
+                    }
+
+                    for (var i2b = 0; i2b < 14; i2b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            muzaricekim(i2b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            muzaridetay(14+i2b) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 2:
+                    $gidecek = '';
+                    for (var i3 = 0; i3 < 3; i3++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                                    '<div class="panel panel-default">\n' +
+                                        '<div class="panel-heading"><b>\n' +
+                                            mastarcekim(i3) +
+                                        '</b></div>\n' +
+                                        '<div class="panel-body">\n' +
+                                            mastardetay(i3) +
+                                        '</div>\n' +
+                                    '</div>' +
+                                '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 3:
+                    $gidecek = '';
+                    for (var i4 = 0; i4 < 10; i4++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                                    '<div class="panel panel-default">\n' +
+                                        '<div class="panel-heading"><b>\n' +
+                                            ismifailcekim(i4) +
+                                        '</b></div>\n' +
+                                        '<div class="panel-body">\n' +
+                                            ismifaildetay(i4) +
+                                        '</div>\n' +
+                                    '</div>' +
+                                '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 4:
+                    $gidecek = '';
+                    for (var i5 = 0; i5 < 7; i5++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                                '<div class="panel panel-default">\n' +
+                                    '<div class="panel-heading"><b>\n' +
+                                        ismimefulcekim(i5) +
+                                    '</b></div>\n' +
+                                    '<div class="panel-body">\n' +
+                                        ismimefuldetay(i5) +
+                                    '</div>\n' +
+                                '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 5:
+                    $gidecek = '';
+                    for (var i6 = 0; i6 < 14; i6++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                                    '<div class="panel panel-default">\n' +
+                                        '<div class="panel-heading"><b>\n' +
+                                            'لَمْ '+ meczum(i6, $muzarimalum) +
+                                        '</b></div>\n' +
+                                        '<div class="panel-body">\n' +
+                                            cahdimutlakdetay(i6, $binaimalum) +
+                                        '</div>\n' +
+                                    '</div>' +
+                                '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i6b = 0; i6b < 14; i6b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                                    '<div class="panel panel-default">\n' +
+                                        '<div class="panel-heading"><b>\n' +
+                                           'لَمْ '+ meczum(i6b, $muzarimechul) +
+                                        '</b></div>\n' +
+                                        '<div class="panel-body">\n' +
+                                            cahdimutlakdetay(i6b,$binaimechul) +
+                                        '</div>\n' +
+                                    '</div>' +
+                                '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 6:
+                    $gidecek = '';
+                    for (var i7 = 0; i7 < 14; i7++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَمَّا '+ meczum(i7, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            cahdimustagrakdetay(i7,$binaimalum) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i7b = 0; i7b < 14; i7b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَمَّا '+ meczum(i7b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            cahdimustagrakdetay(i7b, $binaimechul) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 7:
+                    $gidecek = '';
+                    for (var i8 = 0; i8 < 14; i8++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'مَا '+ muzaricekim(i8, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nefyhaldetay(i8, $binaimalum) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i8b = 0; i8b < 14; i8b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'مَا '+ muzaricekim(i8b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nefyhaldetay(i8b, $binaimechul) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 8:
+                    $gidecek = '';
+                    for (var i9 = 0; i9 < 14; i9++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ muzaricekim(i9, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nefyistikbaldetay(i9, $binaimalum) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i9b = 0; i9b < 14; i9b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ muzaricekim(i9b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nefyistikbaldetay(i9b, $binaimechul) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 9:
+                    $gidecek = '';
+                    for (var i10 = 0; i10 < 14; i10++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَنْ '+ mensub(i10, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            tekidinefyistikbaldetay(i10, $binaimalum) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i10b = 0; i10b < 14; i10b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَنْ '+ mensub(i10b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            tekidinefyistikbaldetay(i10b, $binaimechul) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 10:
+                    $gidecek = '';
+                    for (var i11 = 0; i11 < 6; i11++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لِ'+ meczum(i11, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            emrigaibdetay(i11,$binaimalum) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i11b = 0; i11b < 6; i11b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لِ'+ meczum(i11b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            emrigaibdetay(i11b,$binaimechul) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 11:
+                    $gidecek = '';
+                    for (var i12 = 0; i12 < 6; i12++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ meczum(i12, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nehyigaibdetay(i12,$binaimalum) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i12b = 0; i12b < 6; i12b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ meczum(i12b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nehyigaibdetay(i12b,$binaimechul) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 12:
+                    $gidecek = '';
+                    for (var i13 = 0; i13 < 6; i13++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                                emir(i13, $emir) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            emrihadirdetay(i13, $binaimalum) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i13b = 6; i13b < 12; i13b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لِ'+ meczum(i13b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            emrihadirdetay(i13b, $binaimechul) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 13:
+                    $gidecek = '';
+                    for (var i14 = 6; i14 < 12; i14++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ meczum(i14, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nehyihadirdetay(i14, $binaimalum) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    for (var i14b = 6; i14b < 12; i14b++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ meczum(i14b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nehyihadirdetay(i14b, $binaimechul) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 14:
+                    $gidecek = '';
+                    for (var i15 = 0; i15 < 3; i15++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismimekancekim(i15) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismimekandetay(i15) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 15:
+                    $gidecek = '';
+                    for (var i16 = 0; i16 < 3; i16++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismialetcekim(i16) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismialetdetay(i16) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 16:
+                    $gidecek = '';
+                    for (var i17 = 0; i17 < 3; i17++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            masdarimerre(i17) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            masdarimerredetay(i17) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 17:
+                    $gidecek = '';
+                    for (var i18 = 0; i18 < 3; i18++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            masdarinevi(i18) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            masdarinevidetay(i18) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 18:
+                    $gidecek = '';
+                    for (var i19 = 0; i19 < 6; i19++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismitasgircekim(i19) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismitasgirdetay(i19) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 19:
+                    $gidecek = '';
+                    for (var i20 = 0; i20 < 6; i20++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismimensubcekim(i20) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismimensubdetay(i20) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 20:
+                    $gidecek = '';
+                    for (var i21 = 0; i21 < 6; i21++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            mubalagaismifailcekim(i21) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            mubalagaismifaildetay(i21) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 21:
+                    $gidecek = '';
+                    for (var i22 = 0; i22 < 8; i22++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismitafdilcekim(i22) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismitafdildetay(i22) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 22:
+                    $gidecek = '';
+                    for (var i23 = 0; i23 < 14; i23++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            fiilitaaccupevvelcekim(i23) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            fiilitaaccupevveldetay(i23) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+                case 23:
+                    $gidecek = '';
+                    for (var i24 = 0; i24 < 14; i24++){
+
+                        $detay = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            fiilitaaccupsanicekim(i24) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            fiilitaaccupsanidetay(i24) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detay;
+                    }
+                    return $gidecek;
+            }
+        }
+
+        function cekimtr (x) {
+
+            switch (x) {
+                case 0:
+
+                    $gidecek = '';
+                    for (var i1 = 0; i1 < 28; i1++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            mazicekim(i1) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            mazidetaytr(i1) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+
+                    return $gidecek;
+                case 1:
+                    $gidecek = '';
+                    for (var i2 = 0; i2 < 14; i2++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            muzaricekim(i2, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            muzaridetaytr(i2) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+
+                    for (var i2b = 0; i2b < 14; i2b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            muzaricekim(i2b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            muzaridetaytr(14+i2b) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 2:
+                    $gidecek = '';
+                    for (var i3 = 0; i3 < 3; i3++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            mastarcekim(i3) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            mastardetaytr(i3) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 3:
+                    $gidecek = '';
+                    for (var i4 = 0; i4 < 10; i4++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismifailcekim(i4) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismifaildetaytr(i4) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 4:
+                    $gidecek = '';
+                    for (var i5 = 0; i5 < 7; i5++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismimefulcekim(i5) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismimefuldetaytr(i5) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 5:
+                    $gidecek = '';
+                    for (var i6 = 0; i6 < 14; i6++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَمْ '+ meczum(i6, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            cahdimutlakdetaytr(i6, $binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i6b = 0; i6b < 14; i6b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَمْ '+ meczum(i6b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            cahdimutlakdetaytr(i6b,$binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 6:
+                    $gidecek = '';
+                    for (var i7 = 0; i7 < 14; i7++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَمَّا '+ meczum(i7, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            cahdimustagrakdetaytr(i7,$binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i7b = 0; i7b < 14; i7b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَمَّا '+ meczum(i7b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            cahdimustagrakdetaytr(i7b, $binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 7:
+                    $gidecek = '';
+                    for (var i8 = 0; i8 < 14; i8++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'مَا '+ muzaricekim(i8, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nefyhaldetaytr(i8, $binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i8b = 0; i8b < 14; i8b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'مَا '+ muzaricekim(i8b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nefyhaldetaytr(i8b, $binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 8:
+                    $gidecek = '';
+                    for (var i9 = 0; i9 < 14; i9++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ muzaricekim(i9, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nefyistikbaldetaytr(i9, $binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i9b = 0; i9b < 14; i9b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ muzaricekim(i9b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nefyistikbaldetaytr(i9b, $binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 9:
+                    $gidecek = '';
+                    for (var i10 = 0; i10 < 14; i10++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَنْ '+ mensub(i10, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            tekidinefyistikbaldetaytr(i10, $binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i10b = 0; i10b < 14; i10b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَنْ '+ mensub(i10b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            tekidinefyistikbaldetaytr(i10b, $binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 10:
+                    $gidecek = '';
+                    for (var i11 = 0; i11 < 6; i11++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لِ'+ meczum(i11, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            emrigaibdetaytr(i11,$binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i11b = 0; i11b < 6; i11b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لِ'+ meczum(i11b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            emrigaibdetaytr(i11b,$binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 11:
+                    $gidecek = '';
+                    for (var i12 = 0; i12 < 6; i12++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ meczum(i12, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nehyigaibdetaytr(i12,$binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i12b = 0; i12b < 6; i12b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ meczum(i12b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nehyigaibdetaytr(i12b,$binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 12:
+                    $gidecek = '';
+                    for (var i13 = 0; i13 < 6; i13++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            emir(i13, $emir) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            emrihadirdetaytr(i13, $binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i13b = 6; i13b < 12; i13b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لِ'+ meczum(i13b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            emrihadirdetaytr(i13b, $binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 13:
+                    $gidecek = '';
+                    for (var i14 = 6; i14 < 12; i14++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ meczum(i14, $muzarimalum) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nehyihadirdetaytr(i14, $binaimalumtr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    for (var i14b = 6; i14b < 12; i14b++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            'لَا '+ meczum(i14b, $muzarimechul) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            nehyihadirdetaytr(i14b, $binaimechultr) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 14:
+                    $gidecek = '';
+                    for (var i15 = 0; i15 < 3; i15++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismimekancekim(i15) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismimekandetaytr(i15) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 15:
+                    $gidecek = '';
+                    for (var i16 = 0; i16 < 3; i16++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismialetcekim(i16) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismialetdetaytr(i16) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 16:
+                    $gidecek = '';
+                    for (var i17 = 0; i17 < 3; i17++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            masdarimerre(i17) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            masdarimerredetaytr(i17) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 17:
+                    $gidecek = '';
+                    for (var i18 = 0; i18 < 3; i18++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            masdarinevi(i18) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            masdarinevidetaytr(i18) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 18:
+                    $gidecek = '';
+                    for (var i19 = 0; i19 < 6; i19++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismitasgircekim(i19) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismitasgirdetaytr(i19) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 19:
+                    $gidecek = '';
+                    for (var i20 = 0; i20 < 6; i20++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismimensubcekim(i20) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismimensubdetaytr(i20) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 20:
+                    $gidecek = '';
+                    for (var i21 = 0; i21 < 6; i21++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            mubalagaismifailcekim(i21) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            mubalagaismifaildetaytr(i21) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 21:
+                    $gidecek = '';
+                    for (var i22 = 0; i22 < 8; i22++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            ismitafdilcekim(i22) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            ismitafdildetaytr(i22) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 22:
+                    $gidecek = '';
+                    for (var i23 = 0; i23 < 14; i23++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            fiilitaaccupevvelcekim(i23) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            fiilitaaccupevveldetaytr(i23) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+                case 23:
+                    $gidecek = '';
+                    for (var i24 = 0; i24 < 14; i24++){
+
+                        $detaytr = '<div class="col-lg-4 col-md-4 col-sm-6">' +
+                            '<div class="panel panel-default">\n' +
+                            '<div class="panel-heading"><b>\n' +
+                            fiilitaaccupsanicekim(i24) +
+                            '</b></div>\n' +
+                            '<div class="panel-body">\n' +
+                            fiilitaaccupsanidetaytr(i24) +
+                            '</div>\n' +
+                            '</div>' +
+                            '</div>';
+                        $gidecek += $detaytr;
+                    }
+                    return $gidecek;
+            }
+        }
+
+        function meczum(x, fiil) {
+            switch (x) {
+                case 0:
+                    $detay = 'ي' + fiil + $cezm;
+                    return $detay;
+                    break;
+                case 1:
+                    $detay = 'ي' + fiil + 'َا';
+                    return $detay;
+                    break;
+                case 2:
+                    $detay = 'ي' + fiil + 'ُوا';
+                    return $detay;
+                    break;
+                case 3:
+                    $detay = 'ت' + fiil + $cezm;
+                    return $detay;
+                    break;
+                case 4:
+                    $detay = 'ت' + fiil + 'َا';
+                    return $detay;
+                    break;
+                case 5:
+                    $detay = 'ي' + fiil + $cezm + 'نَ';
+                    return $detay;
+                    break;
+                case 6:
+                    $detay = 'ت' + fiil + $cezm;
+                    return $detay;
+                    break;
+                case 7:
+                    $detay = 'ت' + fiil + 'َا';
+                    return $detay;
+                    break;
+                case 8:
+                    $detay = 'ت' + fiil + 'ُوا';
+                    return $detay;
+                    break;
+                case 9:
+                    $detay = 'ت' + fiil + $esre + 'ي';
+                    return $detay;
+                    break;
+                case 10:
+                    $detay = 'ت' + fiil + 'َا';
+                    return $detay;
+                    break;
+                case 11:
+                    $detay = 'ت' + fiil + $cezm + 'نَ';
+                    return $detay;
+                    break;
+                case 12:
+                    $detay = 'ا' + fiil + $cezm;
+                    return $detay;
+                    break;
+                case 13:
+                    $detay = 'ن' + fiil + $cezm;
+                    return $detay;
+                    break;
+            }
+        }
+        function mensub(x, fiil) {
+            switch (x) {
+                case 0:
+                    $detay = 'ي' + fiil + $ustun;
+                    return $detay;
+                    break;
+                case 1:
+                    $detay = 'ي' + fiil + 'َا';
+                    return $detay;
+                    break;
+                case 2:
+                    $detay = 'ي' + fiil + 'ُوا';
+                    return $detay;
+                    break;
+                case 3:
+                    $detay = 'ت' + fiil + $ustun;
+                    return $detay;
+                    break;
+                case 4:
+                    $detay = 'ت' + fiil + 'َا';
+                    return $detay;
+                    break;
+                case 5:
+                    $detay = 'ي' + fiil + $cezm + 'نَ';
+                    return $detay;
+                    break;
+                case 6:
+                    $detay = 'ت' + fiil + $ustun;
+                    return $detay;
+                    break;
+                case 7:
+                    $detay = 'ت' + fiil + 'َا';
+                    return $detay;
+                    break;
+                case 8:
+                    $detay = 'ت' + fiil + 'ُوا';
+                    return $detay;
+                    break;
+                case 9:
+                    $detay = 'ت' + fiil + $esre + 'ي';
+                    return $detay;
+                    break;
+                case 10:
+                    $detay = 'ت' + fiil + 'َا';
+                    return $detay;
+                    break;
+                case 11:
+                    $detay = 'ت' + fiil + $cezm + 'نَ';
+                    return $detay;
+                    break;
+                case 12:
+                    $detay = 'ا' + fiil + $ustun;
+                    return $detay;
+                    break;
+                case 13:
+                    $detay = 'ن' + fiil + $ustun;
+                    return $detay;
+                    break;
+            }
+        }
+        function emir(x, fiil) {
+            switch (x) {
+                case 0:
+                    $detay = fiil + $cezm;
+                    return $detay;
+                    break;
+                case 1:
+                    $detay = fiil + 'َا';
+                    return $detay;
+                    break;
+                case 2:
+                    $detay = fiil + 'ُوا';
+                    return $detay;
+                    break;
+                case 3:
+                    $detay = fiil + $esre + 'ي';
+                    return $detay;
+                    break;
+                case 4:
+                    $detay = fiil + 'َا';
+                    return $detay;
+                    break;
+                case 5:
+                    $detay = fiil + $cezm + 'نَ';
+                    return $detay;
+                    break;
+            }
+        }
+    }
+
+    function detaytrgetir(x) {
+        switch (x) {
+            case 0:
+                $detay = '<div dir="ltr" class="solsag"><style type="text/css">\n' +
+                    '\tp.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}\n' +
+                    '\tp.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}\n' +
+                    '\tli.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}\n' +
+                    '\tspan.s1 {text-decoration: underline}\n' +
+                    '\tspan.Apple-tab-span {white-space:pre}\n' +
+                    '\tol.ol1 {list-style-type: decimal}\n' +
+                    '\tul.ul1 {list-style-type: hyphen}\n' +
+                    '</style>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span>Arapça zaman bakımından iki temel fiil vardır:</p>\n' +
+                    '<p class="p2"><br></p>\n' +
+                    '<ol class="ol1">\n' +
+                    '  <li class="li1"><b>Fiil-i Madi</b> <b>=</b> Geçmiş zamanda yapılan işleri belirtmek için kullanılır. Türkçe’deki -di li (rivayet) geçmiş zaman fiiline karşılık gelir</li>\n' +
+                    '  <li class="li1"><b>Fiil-i Müdari</b> <b>=</b> Şimdiki zamanda yapılan veya gelecek zamanda yapılacak olan işleri belirtmek için kullanılır. Türkçe’deki şimdiki, gelecek ve geniş zaman fiillerine karşılık gelir.</li>\n' +
+                    '</ol>\n' +
+                    '<p class="p2"><br></p>\n' +
+
+                    '<b><span class="Apple-tab-span">\t</span></b><span class="s1"><b>Not: Emir ve Nehiy Fiileri =</b></span> Talep bildiren fiilleridir zaman bakımından ayrıma tabi tutulmazlar. Her halukarda gelecek zamanda gerçekleşmeleri veya gelecek zamanda gerçekleşmemeleri talep edilen işler için kullanılırlar. İlk iki fiilimiz durum, emir ve nehiy fiileri ise talep fiilleridir. Talep fiilinin olumlusu <b>Emir</b> olumsuzu <b>Nehiy</b>’dir. Türkçedeki emir fiiline karşılık gelirler.\n' +
+
+                    '<p class="p2"><span class="Apple-tab-span">\t</span></p>\n' +
+
+                    '<span class="Apple-tab-span">\t</span>Fiiller kendilerini gerçekleştiren faile göre yani fiil cümlesindeki özneye göre çeşitli şekillerde kullanılırlar. Türkçe’de buna fiilin kişilere göre çekimi diyebiliriz. Türkçe’de herhangi bir fiilin kişilere göre çekimi 6 temel kişiye göre yapılır:\n' +
+
+                    '<p class="p2"><br></p>\n' +
+                    '<ol class="ol1">\n' +
+                    '  <ul class="ul1">\n' +
+                    '    <li class="li1">yaptı-m <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>(Birinci Tekil Şahıs - Ben)</li>\n' +
+                    '    <li class="li1">yaptı-n <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>(İkinci Tekil Şahıs - Sen)</li>\n' +
+                    '    <li class="li1">yaptı <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>(Üçüncü Tekil Şahıs - O)</li>\n' +
+                    '    <li class="li1">yaptı-k <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>(Birinci Çoğul Şahıs - Biz)</li>\n' +
+                    '    <li class="li1">yaptı-nız <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>(İkinci Çoğul Şahıs - Siz)</li>\n' +
+                    '    <li class="li1">yaptı-lar <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>(Üçüncü Çoğul Şahıs - Onlar)</li>\n' +
+                    '  </ul>\n' +
+                    '</ol>\n' +
+                    '<p class="p2"><span class="Apple-tab-span">\t</span></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span>Türkçe’de failin yani fiil cümlesindeki öznenin cinsiyetine göre fiilin yapısı değişmez, Türkçe’de cinsiyet farklılığı için ayrı zamirler de tahsis edilmiş değildir. Ayrıca Türkçe’de sayı bakımından kişiler tekil ve çoğul olarak ayrıma tabi tutulmuş iki kişinin yaptığı işler için çoğul ifade kullanılmıştır. Ancak Arapça’da durum biraz daha farklıdır. Şöyleki:</p>\n' +
+                    '<p class="p2"><br></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span><b>Müfret: <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span></b>Tekil şahıs<span class="Apple-converted-space"> </span></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span><b>Tesniye: <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span></b>İkil şahıs<span class="Apple-converted-space"> </span></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span><b>Cemi:<span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span></b>Çoğul şahıs</p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span><b>Müzekker:<span class="Apple-tab-span">\t</span></b> <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>Erkek şahıs</p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span><b>Müennes:<span class="Apple-tab-span">\t</span></b><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>Dişi şahıs</p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span><b>Gaib: <span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span></b>Üçüncü şahıs (o - onlar)</p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span><b>Muhatap:</b><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span><span class="Apple-tab-span">\t</span>İkinci şahıs (sen - siz)</p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span><b>Nefs-i Mütekellim: <span class="Apple-tab-span">\t</span></b>Birinci şahıs (ben - biz)</p>\n' +
+                    '<p class="p2"><span class="Apple-tab-span">\t</span></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span>Fiiller <b>Gaib</b> (üçüncü şahıs -o ve onlar-) ve <b>Muhatap</b> (ikinci şahıs -sen ve siz-) kişileri; sayı bakımından; <b>müfretlik</b>(tekillik), <b>tesniyelik</b>(ikillik) ve <b>cemilik</b>(çoğulluk) cinsiyet bakımından da <b>müzekkerlik</b>(erillik) ve <b>müenneslik</b>(dişilik) durumları olmak üzere her biri için toplam 6 farklı kullanım yapılırken <b>Mütekellim</b> (Birinci şahıs -ben ve biz-) için sadece sayı bakımından müfret(tekil) ve cemi(çoğul) ayrımına tabi tutulmuş ve cinsiyetler için farklı kullanımlar geliştirilmemiştir. Böylece Türkçe’de <b>6</b> olan temel fiil çekimleri Arapça’da <b>14</b> temel fiil çekimi olarak karşımıza çıkar.</p>\n' +
+                    '<p class="p2"><span class="Apple-tab-span">\t</span></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span>Ayrıca fiiller <b>çatıları</b> itibari ile Türkçe’de fiil cümlesindeki <b>özneye</b> (fail) ve fiil cümlesindeki <b>nesneye</b> (mefulu bih) göre türlere ayrılır. Özneye göre; <b>etken</b> (özne yani fiilin kuruluşundaki kişi fiili yapan kişidir) - <b>edilgen</b> (özne yani fiilin kuruluşundaki kişi gerçekte fiili yapan değil fiilden etkilenen kişidir. Türkçe’de bu kişiye “sözde özne” Arapça’da “naibi fail” denir) - <b>dönüşlü</b> (fiilde işi yapanla, yapılan işten etkilenen aynı kişidir.) ve <b>işteş</b> (fiili yapan en az iki kişidir). <b>Nesneye</b> göre <b>geçişli</b> (öznenin yaptığı fiil nesneyi etkiler) - <b>geçişsiz</b> (öznenin yaptığı fiil nesneyi etkilemeyip sadece öznede kalır) - <b>ettirgen</b> (geçişli fiillere –r, -tır, -t ekleri getirilip fiil geçişliliğini devam ettirilen fiillerdir) - <b>oldurgan</b> (Geçişsiz fiillere –r, -tır, -t ekleri getirilerek geçişli yapılan fiildir).</p>\n' +
+                    '<p class="p2"><br></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span>Arapça’da ise temel olarak 8 farklı fiil <b>Binası</b> yani çatısı vardır. <b>Malum </b>etken, <b>Mechul</b> edilgen, <b>Muteaddi</b> geçişli, <b>Lazimi</b> geçişsiz ve <b>Müşareke</b> işteş çatı olarak Türkçe’deki çatılara uymaktadır. Ayrıca Arapaç’da çokluk belirten bina(çatı) olarak <b>Teksir</b>, yapı ve şekil bakımından etken fakat anlam olarak edilgen olan fiiller için <b>Mutavaat</b>, ve fiilin aşamalı olarak gerçekleştiğini belirten <b>Tekellüf</b> binası yani çatısı karşımıza çıkmaktadır.</p>\n' +
+                    '<p class="p2"><span class="Apple-tab-span">\t</span></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span>Yukarda yazdığımız kısımları iyi bir şekilde anlamak için en az bir kaç kere okumak ve gerekirse türkçe dilbilgisi kitaplarından destek almak lazımdır. Zira diller kural olarak birbirlerinden çok ciddi anlamda farklı değillerdir. Daha iyi anlaşılması için sık sık Türkçe’deki kurallarla karşılaştırma yapacağız.</p>\n' +
+                    '<p class="p2"><br></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span>Konuyu kapatmadan şu iki yanlış anlatıma dikkat çekmek istiyorum: <b>Mechul</b>, bilinmeyen ve <b>Gaib</b> orda olmayan kişi demek <b>değildir</b> bu kesinlikle hatalı bir açıklamadır. Kelimelerin sözlük anlamlarına bakılarak yapılmış bir hatadır. Oysa burada kelimelerin sözlük anlamı değil terim anlamları önemlidir ki doğru açıklamaları yukarda yaptığımız gibi şöyledir. Bina-i Mechul edilgen çatılı fiil ve Gaib üçüncü şahıs yani (o veya onlar) demektir. Buna dikkat edilmelidir.</p>\n' +
+                    '<p class="p2"><br></p>\n' +
+                    '<p class="p1"><span class="Apple-tab-span">\t</span>Bütün bunları iyi bir şekilde anladıysanız artık ikinci fiilimize geçebiliriz.</p></div>';
+                return $detay;
+                break;
+            default:
+                return 'Buraya bu bölümün açıklama yazıları gelecek';
+                break;
+        }
+    }
+
+</script>
+</body>
+</html>

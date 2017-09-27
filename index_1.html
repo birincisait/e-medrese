@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,  minimum-scale=1, initial-scale=1">
+<title>Emsile</title>
+    <link rel="stylesheet" href="css/bootstraprtl.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstraprtl.min.js"></script>
+</head>
+<body>
+<h1 style="text-align: center">Dijital Sarf</h1>
+<div id="formDiv">
+    <form action="" method="post">
+        <div style="text-align: center; font-size: x-large" class="form-group col-xs-4">
+            <select style="width: 65px" name="first" id="first">
+                <option value="ن">ن</option>
+                <option value="ب">ب</option>
+                <option value="ت">ت</option>
+                <option value="ث">ث</option>
+                <option value="ج">ج</option>
+                <option value="ح">ح</option>
+                <option value="خ">خ</option>
+                <option value="د">د</option>
+                <option value="ذ">ذ</option>
+                <option value="ر">ر</option>
+                <option value="ز">ز</option>
+                <option value="س">س</option>
+                <option value="ش">ش</option>
+                <option value="ص">ص</option>
+                <option value="ض">ض</option>
+                <option value="ط">ط</option>
+                <option value="ظ">ظ</option>
+                <option value="ع">ع</option>
+                <option value="غ">غ</option>
+                <option value="ف">ف</option>
+                <option value="ق">ق</option>
+                <option value="ك">ك</option>
+                <option value="ل">ل</option>
+                <option value="م">م</option>
+                <option value="ه">ه</option>
+            </select>
+        </div>
+        <div style="text-align: center; font-size: x-large" class="form-group col-xs-4">
+            <select style="width: 65px" name="second" id="second">
+                <option value="ص">ص</option>
+                <option value="ب">ب</option>
+                <option value="ت">ت</option>
+                <option value="ث">ث</option>
+                <option value="ج">ج</option>
+                <option value="ح">ح</option>
+                <option value="خ">خ</option>
+                <option value="د">د</option>
+                <option value="ذ">ذ</option>
+                <option value="ر">ر</option>
+                <option value="ز">ز</option>
+                <option value="س">س</option>
+                <option value="ش">ش</option>
+                <option value="ض">ض</option>
+                <option value="ط">ط</option>
+                <option value="ظ">ظ</option>
+                <option value="ع">ع</option>
+                <option value="غ">غ</option>
+                <option value="ف">ف</option>
+                <option value="ق">ق</option>
+                <option value="ك">ك</option>
+                <option value="ل">ل</option>
+                <option value="م">م</option>
+                <option value="ن">ن</option>
+                <option value="ه">ه</option>
+            </select>
+        </div>
+        <div style="text-align: center; font-size: x-large" class="form-group col-xs-4">
+            <select style="width: 65px" name="third" id="third">
+                <option value="ر">ر</option>
+                <option value="ب">ب</option>
+                <option value="ت">ت</option>
+                <option value="ث">ث</option>
+                <option value="ج">ج</option>
+                <option value="ح">ح</option>
+                <option value="خ">خ</option>
+                <option value="د">د</option>
+                <option value="ذ">ذ</option>
+                <option value="ز">ز</option>
+                <option value="س">س</option>
+                <option value="ش">ش</option>
+                <option value="ص">ص</option>
+                <option value="ض">ض</option>
+                <option value="ط">ط</option>
+                <option value="ظ">ظ</option>
+                <option value="ع">ع</option>
+                <option value="غ">غ</option>
+                <option value="ف">ف</option>
+                <option value="ق">ق</option>
+                <option value="ك">ك</option>
+                <option value="ل">ل</option>
+                <option value="م">م</option>
+                <option value="ن">ن</option>
+                <option value="ه">ه</option>
+            </select>
+        </div>
+        <div style="text-align: center;" class="form-control">
+            <button class="btn btn-success" type="button" onclick="getir()" id="button">GETİR</button>
+        </div>
+    </form>
+</div>
+<div id="accordionss">
+
+</div>
+<p style="text-align: center"><button class="btn btn-danger hidden" type="button" onclick="gotur()" id="button2">GÖTÜR</button></p>
+<script>
+
+    function gotur() {
+        $('#formDiv').show();
+        $('#accordionss').html('');
+        $('#button2').addClass('hidden');
+    }
+
+    function getir(){
+
+        $('#formDiv').hide();
+        $('#button2').removeClass('hidden');
+
+        $bir = $('#first').val();
+        $iki = $('#second').val();
+        $uc = $('#third').val();
+
+        $ustun = 'َ';
+        $ikiustun = 'ً';
+        $esre = 'ِ';
+        $ikiesre = 'ٍ';
+        $otre = 'ُ';
+        $ikiotre = 'ٌ';
+        $cezm = 'ْ';
+        $sedde = 'ّ';
+
+        for (var i = 0; i < 24; i++){
+
+            $('#accordionss').append(
+                '<div class="panel panel-success col-lg-3 col-sm-6">\n' +
+                '    <div class="panel-heading">\n' +
+                '        <h4 style=" text-align: center" class="panel-title">\n' +
+                '            <a style="font-size: 25px; font-weight: bold" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion'+i+'" href="#collapse'+i+'">\n' +
+                '                ' + misal(i) +
+                '            </a>\n' +
+                '        </h4>\n' +
+                '    </div>\n' +
+                '    <div id="collapse'+i+'" class="panel-collapse collapse">\n' +
+                '        <div class="panel-body" style="text-align: center">\n' +
+                '            ' + misaldetay(i) +
+                '        </div>\n' +
+                '    </div>\n' +
+                '</div>'
+            );
+        }
+
+        function misal (x) {
+            switch (x) {
+                case 0:
+                    return $bir + $ustun  + $iki + $ustun + $uc + $ustun;
+                    break;
+                case 1:
+                    return 'ي' + $ustun + $bir + $cezm  + $iki + $otre + $uc + $otre
+                    break;
+                case 2:
+                    return $bir + $ustun  + $iki + $cezm + $uc + $ikiustun + 'ا';
+                    break;
+                case 3:
+                    return $bir + $ustun + 'ا' + $iki + $esre + $uc + $ikiotre;
+                    break;
+                case 4:
+                    return 'م' + $ustun + $bir + $cezm + $iki + $otre+ 'و' + $uc + $ikiotre;
+                    break;
+                case 5:
+                    return 'لَمْ يَ' + $bir + $cezm + $iki + $otre + $uc + $cezm;
+                    break;
+                case 6:
+                    return 'لَمَّا يَ' + $bir + $cezm + $iki + $otre + $uc + $cezm;
+                    break;
+                case 7:
+                    return 'مَا يَ' + $bir + $cezm + $iki + $otre + $uc + $otre;
+                    break;
+                case 8:
+                    return 'لَا يَ' + $bir + $cezm + $iki + $otre + $uc + $otre;
+                    break;
+                case 9:
+                    return 'لَنْ يَ' + $bir + $cezm + $iki + $otre + $uc + $ustun;
+                    break;
+                case 10:
+                    return 'لِيَ' + $bir + $cezm + $iki + $otre + $uc + $cezm;
+                    break;
+                case 11:
+                    return 'لَا يَ' + $bir + $cezm + $iki + $otre + $uc + $cezm;
+                    break;
+                case 12:
+                    return 'اُ' + $bir + $cezm + $iki + $otre + $uc + $cezm;
+                    break;
+                case 13:
+                    return 'لَا تَ' + $bir + $cezm + $iki + $otre + $uc + $cezm;
+                    break;
+                case 14:
+                    return 'مَ' + $bir + $cezm + $iki + $ustun + $uc + $ikiotre;
+                    break;
+                case 15:
+                    return 'مِ' + $bir + $cezm + $iki + $ustun + $uc + $ikiotre;
+                    break;
+                case 16:
+                    return $bir + $ustun + $iki + $cezm + $uc + $ustun + 'ةً';
+                    break;
+                case 17:
+                    return $bir + $esre + $iki + $cezm + $uc + $ustun + 'ةً';
+                    break;
+                case 18:
+                    return $bir + $otre + $iki + $ustun + 'يْ' + $uc + $ikiotre;
+                    break;
+                case 19:
+                    return $bir + $ustun + $iki + $cezm + $uc + $esre + 'يٌّ';
+                    break;
+                case 20:
+                    return $bir + $ustun + $iki + 'َّا' + $uc + $ikiotre;
+                    break;
+                case 21:
+                    return 'اَ' + $bir + $cezm + $iki + $ustun + $uc + $otre;
+                    break;
+                case 22:
+                    return 'مَا اَ' + $bir + $cezm + $iki + $ustun + $uc + $ustun + 'هُ';
+                    break;
+                case 23:
+                    return 'وَ اَ' + $bir + $cezm + $iki + $esre + $uc + $cezm + ' بِهِ';
+                    break;
+            }
+        }
+        function misaldetay (x) {
+            switch (x) {
+                case 0:
+                    $detay = '<b>فعل ماضي بناء معلوم مفرد مذكر غائب معناسي ایتدی بر غائب ار كچمش زماندە</b>'+
+                        '<br>"FİİL-İ MÂZİ" Türkçe’deki –di’li geçmiş zamana denir. "BİNA-İ MA\'LUM" demek Etken çatılı fiil demektir yani etken fiillerde fail vardır ve bu fail doğrudan fiilde gösterilen işi yapan kişidir. Tek kişi için kullanılan fiil "MÜFRED" yani tekildir. Erkekte kullanılanlara Arapça’da "MÜZEKKER" (eril) denir. Arapça’da kendinden bahsedilene yani üçüncü şahsa; "GAİB" denir (YAPTI)';
+                    return $detay;
+                    break;
+                case 1:
+                    $detay = '<b>فعل مضارع بناء معلوم مفرد مذكر غائب معناسي ایدر بر غائب ار شمدیكی حالدە یا كلەجك زماندە</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir (YAPIYOR/YAPACAK/YAPAR)';
+                    return $detay;
+                    break;
+                case 2:
+                    $detay = '<b>مصدر غير میمي مفرد معناسي ایتمك</b>'+
+                        '<br>Eylem anlamı taşıyan, ancak kişi ve kip çekimleri olmayan, cümlede ad, sıfat ya da zarf olarak görev yapan sözcüklerdir. Kısaca fiilin ismidir. Fiil olmadığı için binası yani çatısı, Canlı varlık ismi olmadığı için de erkeklik ve dişilik yoktur (YAPMAK)';
+                    return $detay;
+                case 3:
+                    $detay = '<b>اسم فاعل مفرد مذكر معناسي ایدیجی بر ار</b>'+
+                        '<br>Herhangi bir fiilden o fiili yapana verilen ismi türetmek için kullanılan şekil (Kalıp) İsm-i Fail kalıbıdır. Türkçede fiilden isim türeten -an eki ile oluşmuş bir fiilimsidir (YAPAN/YAPICI) ';
+                    return $detay;
+                case 4:
+                    $detay = '<b>اسم مفعول مفرد مذكر معناسي اولنمش بر ار</b>'+
+                        '<br>Herhangi bir geçişli fiil kullanılarak fiilden etkilenene verilen ismi türetmek için kullanılan şekil (Kalıp) İsm-i Mef\'ul kalıbıdır. Türkçede fiilden isim türeten -an eki ile oluşmuş bir fiilimsidir (YAPILAN) ';
+                    return $detay;
+                case 5:
+                    $detay = '<b>فعل مضارع جحد مطلق بناء معلوم مفرد مذكر غائب معناسي ایتمدی بر غائب ار كچمش زماندە</b>'+
+                        '<br>Fiili müzarinin başına cezm edici edatın getirilmesi sonucu anlamı olumsuz olarak geçmiş zamana çevirilir (YAPMADI)';
+                    return $detay;
+                case 6:
+                    $detay = '<b>فعل مضارع جحد مستغرق بناء معلوم مفرد مذكرغائب معناسي ایتمدی بر غائب ار كچمش زمانك جمعیسندە</b>'+
+                        '<br>Fiili müzarinin başına cezm edici edatın getirilmesi sonucu anlamı olumsuz olarak geçmiş zamana çevirilir ve yapılacağına dair beklenti eklenir burada anahtar kelime henüz kelimesidir önceki çekimden farkı budur (HENÜZ YAPMADI)';
+                    return $detay;
+                case 7:
+                    $detay = '<b>فعل مضارع نفی حال بناء معلوم مفرد مذكر غائب معناسي ایتمزبر غائب ار شمدیكی حالدە</b>'+
+                        '<br>Fiili müzarinin başına olumsuzluk eki gelerek şekil olarak bir değişiklik yapmamakla beraber anlam olumsuzlaşıp şimdiki zamana daralır "NEFY" olumsuz "HAL" şimdiki zaman demektir (ŞU AN YAPMIYOR)';
+                    return $detay;
+                case 8:
+                    $detay = '<b>فعل مضارع نفی استقبال بناء معلوم مفرد مذكر غائب معناسي ایتمز بر غائب ار كلەجك زماندە</b>'+
+                        '<br>Fiili müzarinin başına olumsuzluk eki gelerek şekil olarak bir değişiklik yapmamakla beraber anlam olumsuzlaşıp gelecek zamana daralır "İSTİKBAL" gelecek zaman demektir (YAPMAYACAK)';
+                    return $detay;
+                case 9:
+                    $detay = '<b>فعل مضارع تأكید نفی استقبال بناء معلوم مفرد مذكر غائب معناسي البتە ایتمز بر غائب ار كلەجك زماندە</b>'+
+                        '<br>Fiili müzarinin başına olumsuzluk eki gelerek şekil olarak bir son harekeyi üstün yapmamakla beraber anlam olumsuzlaşıp gelecek zamana daralır  ve pekiştirme anlamı eklenir "TEKİT" pekiştirmektir (KESİNLİKLE YAPMAYACAK)';
+                    return $detay;
+                case 10:
+                    $detay = '<b>Emr-i Gâib Bina-i Ma’lum Müfred Müzekker Gâib</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 11:
+                    $detay = '<b>Nehy-i Gâib Bina-i Ma’lum Müfred Müzekker Gâib</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 12:
+                    $detay = '<b>Emr-i Hazır Bina-i Ma’lum Müfred Müzekker Muhatap</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 13:
+                    $detay = '<b>Nehy-i Hazır Bina-i Ma’lum Müfred Müzekker Muhatap</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 14:
+                    $detay = '<b>İsm-i Zaman İsm-i Mekân Masdar-ı Mimî Müfred</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 15:
+                    $detay = '<b>Masdar-ı gayr-i mimî Müfred</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 16:
+                    $detay = '<b>Masdar-ı Bina-i Merre Müfred</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 17:
+                    $detay = '<b>Masdar-ı Bina-i Nevi Müfred</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 18:
+                    $detay = '<b>İsm-i Tasgir Müfred Müzekker</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 19:
+                    $detay = '<b>İsm-i Mensub Müfred Müzekker</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 20:
+                    $detay = '<b>Mübalağa İsm-i Fail Müfred Müzekker</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 21:
+                    $detay = '<b>İsm-i Tafdil Müfred Müzekker</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 22:
+                    $detay = '<b>Fiil-i Taacub-i Evvel Müfred Müzekker Gaib</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+                case 23:
+                    $detay = '<b>Fiil-i Taacub-i Sani Müfred Müzekker Gaib</b>'+
+                        '<br>Arapça’da iki temel farklı fiil çekimi vardır. Başına bir harf  getirilmek veya son harekede değişiklik yapmak suretiyle diğer zamanlar hep bu ikisinden türetilir. Mâzî fiil çekiminden sonra öğrenmemiz gereken ikinci fiil çekimi muzâri fiil çekimidir. Şimdiki, gelecek ve geniş zamandaki bir olayı bildiren fiillere Fiil-i muzâri denir';
+                    return $detay;
+            }
+        }
+    }
+</script>
+</body>
+</html>

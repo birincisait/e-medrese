@@ -1,0 +1,24 @@
+@font-face {
+    font-family: baghdad2;
+    src: url(fonts/baghdad.ttc);
+}
+@font-face {
+    font-family: glyphicons;
+    src: url(fonts/glyphicons-halflings-regular.ttf);
+}
+body{padding-top: 0px}
+.sayfabaslik {font-family: baghdad2; text-align: center}
+.sel1{font-size: x-large; padding: 15px 0!important;}
+.formgroup{text-align: center; font-size: x-large;}
+.form-control, h4{text-align: center}
+#pgotur{text-align: center}
+.panel-heading{font-family: baghdad2; text-align: center; font-size: xx-large}
+.panelGiris{font-family: glyphicons; text-align: center; font-size: medium; max-height: 110px}
+.panel-body{font-family: glyphicons; text-align: center; font-size: medium; height: 150px}
+.btn{margin: 5px}
+#butonlar{text-align: center}
+.modelA{background-color: rgba(50, 250, 50, .4)}
+.modelB{background-color: rgba(225, 30, 30, .4)}
+.modelC{background-color: rgba(30, 130, 225, .4)}
+.modelD{background-color: rgba(250, 150, 10, .4)}
+.close{float: left}
