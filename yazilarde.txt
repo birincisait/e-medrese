@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 INSERT INTO `authors` (`title`, `url`, `imgurl`, `sirasi`) VALUES ('Al Jazeera', 'aljazeera', 'https://galgale.com/wp-content/uploads/2017/05/aj-logo-lg-150x150.png', 1),
 ('Azer News(Azeri)', 'azarnews', 'https://galgale.com/wp-content/uploads/2017/06/azernews.png', 2),
 ('BBC News', 'bbcnews', 'https://www.galgale.com/wp-content/uploads/2017/06/1200x630bb-150x150.jpg', 3),
@@ -16,3 +17,6 @@ INSERT INTO `authors` (`title`, `url`, `imgurl`, `sirasi`) VALUES ('Al Jazeera',
 ('VOA News', 'voanews', 'https://galgale.com/wp-content/uploads/2017/05/voa-150x150.jpg', 16),
 ('Spiegel', 'spiegel', 'https://www.galgale.com/wp-content/uploads/2017/07/logo-150x150.png', 17),
 ('Washington Post', 'washingtonpost', 'https://galgale.com/wp-content/uploads/2017/05/imrs-150x150.png', 18);
+=======
+Buraya notlari almak veya buradan yazi operasyonlarini yapmak icin kullanacagiz
+>>>>>>> Stashed changes
