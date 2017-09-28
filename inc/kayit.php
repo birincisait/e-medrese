@@ -38,7 +38,7 @@ if ($_POST) {
 
         $sifremd5 = md5($sifre);
 
-        $v = $db->prepare("select * from medrese_ogrenci where username = ?");
+        $v = $db->prepare("select * from tabloadi where username = ?");
         $v->execute(array($kullaniciadi));
         $x = $v->fetch(PDO::FETCH_ASSOC);
         $y = $v->rowCount();
@@ -54,7 +54,7 @@ if ($_POST) {
 
         } else {
 
-            $x = $db->prepare("insert into medrese_ogrenci set
+            $x = $db->prepare("insert into tabloadi set
 
 				          name = ?,
 						  surname = ?,
