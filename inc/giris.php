@@ -31,11 +31,11 @@ if ($_POST) {
 
         if ($x) {
 
-            $_SESSION["uye"] = $z["username"];
-            $_SESSION["eposta"] = $z["email"];
-            $_SESSION["rutbe"] = $z["rutbe"];
-            $_SESSION["id"] = $z["id"];
-            $_SESSION['user_session'] = $z["id"];
+            $_SESSION["uye"] = $z["user_username"];
+            $_SESSION["eposta"] = $z["user_email"];
+            $_SESSION["rutbe"] = $z["user_rutbe"];
+            $_SESSION["id"] = $z["user_id"];
+            $_SESSION['user_session'] = $z["user_session"];
 
             ?>
             <script>
