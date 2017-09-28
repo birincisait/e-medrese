@@ -24,7 +24,7 @@ if ($_POST) {
 
     } else {
 
-        $uye = $db->prepare("select * from tabloadi where username = ? and password = ?");
+        $uye = $db->prepare("select * from tabloadi where user_username = ? and user_password = ?");
         $uye->execute(array($username, $sifre));
         $z = $uye->fetch(PDO::FETCH_ASSOC);
         $x = $uye->rowCount();
