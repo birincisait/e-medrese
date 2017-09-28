@@ -38,7 +38,7 @@ if ($_POST) {
 
         $sifremd5 = md5($sifre);
 
-        $v = $db->prepare("select * from tabloadi where username = ?");
+        $v = $db->prepare("select * from tabloadi where user_username = ?");
         $v->execute(array($kullaniciadi));
         $x = $v->fetch(PDO::FETCH_ASSOC);
         $y = $v->rowCount();
@@ -56,11 +56,11 @@ if ($_POST) {
 
             $x = $db->prepare("insert into tabloadi set
 
-				          name = ?,
-						  surname = ?,
-						  email = ?,
-						  username = ?,
-						  password = ?
+				          user_name = ?,
+						  user_surname = ?,
+						  user_email = ?,
+						  user_username = ?,
+						  user_password = ?
 
 				");
 
